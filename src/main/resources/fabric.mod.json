@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "server-switcher",
+	"version": "${version}",
+	"name": "Server Switcher",
+	"description": "Adds a Server Swither button to the ESC menu.",
+	"authors": [
+		"harimasa"
+	],
+	"contact": {
+		"sources": "https://github.com/harimasa/ServerSwitcher"
+	},
+	"license": "GPL-3.0",
+	"icon": "assets/server-switcher/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"ru.harimasa.ServerSwitcher"
+		]
+	},
+	"mixins": [
+		"server-switcher.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
