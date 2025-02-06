@@ -16,6 +16,9 @@
 	"entrypoints": {
 		"main": [
 			"ru.harimasa.ServerSwitcher"
+		],
+		"modmenu": [
+			"ru.harimasa.modmenu.ModMenuScreenInit"
 		]
 	},
 	"mixins": [

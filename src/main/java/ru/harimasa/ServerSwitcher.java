@@ -8,6 +8,7 @@ import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import ru.harimasa.config.ButtonPositionConfig;
 
 public class ServerSwitcher implements ModInitializer {
 	public static final String MOD_ID = "server-switcher";
@@ -15,6 +16,7 @@ public class ServerSwitcher implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ButtonPositionConfig.load();
 		LOGGER.info("hi");
 	}
 }
